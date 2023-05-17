@@ -45,7 +45,7 @@ hr {
 
 .accordion {
     background-color: white;
-    color: #444;
+    color: #444444;
     border-radius: 15px;
     cursor: pointer;
     padding: 18px;
@@ -58,15 +58,15 @@ hr {
     transition: 0.4s;
   }
   .active, .accordion:hover  {
-    background-color: #fff;
+    background-color: #ffffff;
     font-weight: bold;
   }
   .accordion:after {
-    content: url('images/icon-arrow-down.svg');
+    content: url('https://cdn.glitch.global/38622e29-2ef7-48d8-a8b1-69510d97b3c1/icon-arrow-down.svg?v=1684328780264');
     float: right;
   }
   .active:after {
-    content:  url('images/icon-arrow-down.svg');
+    content:  url('https://cdn.glitch.global/38622e29-2ef7-48d8-a8b1-69510d97b3c1/icon-arrow-down.svg?v=1684328780264');
     transform: rotate(180deg);
   }
   .panel {
@@ -86,7 +86,7 @@ hr {
   img#front  {
     display: block;
     position: relative;
-    diplay: flex;
+    /*diplay: flex;*/
     width: 100%;
     max-height: 180px;
     transform: translate(0px, -8px) !important;
@@ -96,7 +96,7 @@ hr {
   img#back {
     display: block;
     position:relative;
-    diplay:flex;
+    /*diplay: flex;*/
     width:70%;
     transform: translate(50px, 200px);
     z-index: 2;
@@ -126,7 +126,7 @@ hr {
   img#front  {
     display: block;
     position: relative;
-    diplay: flex;
+    /*diplay: flex;*/
     width: 100%;
     max-height: 180px;
     transform: translate(0px, -8px) !important;
@@ -136,7 +136,7 @@ hr {
   img#back {
     display: block;
     position:relative;
-    diplay:flex;
+    /*diplay: flex;*/
     width:70%;
     transform: translate(55px, 200px);
     z-index: 2;
@@ -182,7 +182,7 @@ hr {
   img#front  {
     display: block;
     position: relative;
-    diplay: flex;
+    /*diplay: flex;*/
     width: 100%;
     max-height: 180px;
     transform: translate(0px, -8px) !important;
@@ -192,7 +192,7 @@ hr {
   img#back {
     display: block;
     position:relative;
-    diplay:flex;
+    /*diplay: flex;*/
     width:70%;
     transform: translate(55px, 200px);
     z-index: 2;
@@ -203,7 +203,7 @@ hr {
 /**********  INICIA  -- min-width: 577px  and max-width: 768px --   ***********************************/
 
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 767.9px) {
   .acordion-container {
     display: block;
     position: relative;
@@ -222,7 +222,7 @@ hr {
   img#front  {
     display: block;
     position: relative;
-    diplay: flex;
+    /*diplay: flex;*/
     width: 100%;
     max-height: 180px;
     transform: translate(0px, -60px) !important;
@@ -232,7 +232,7 @@ hr {
   img#back {
     display: block;
     position:relative;
-    diplay:flex;
+    /*diplay: flex;*/
     width:30%;
     transform: translate(260px, 150px);
     z-index: 2;
@@ -244,16 +244,19 @@ hr {
 
 /**********  EMPIEZA  -- min-width: 769px  --   ***********************************/
 
-@media (min-width: 768.1px) {
+@media (min-width: 768px) and (max-width: 991.9px) {
   body {
+    min-height:900px;
     background: hsl(240, 73%, 65%) !important;
   }
+  hr {
+      transform:traslateY(-5px) !important;
+  }
   #myCard {
-    min-width: 70vw;
-    max-height: 600px;
+    min-width: 80vw;
+    max-height:650px;
     height: auto;
-    margin: 10px;
-    transform: translateX(80px);
+    margin-right: 100px;
     background: white !important;
     overflow: hidden;
     z-index: 1;
@@ -262,10 +265,10 @@ hr {
     display: block;
     position: relative;
     background: white;
-    width: 75% !important;
-    transform: translate(100px, 40px) !important;
-    max-height: 70vh;
-    height: 50%;
+    width: 85% !important;
+    transform: translate(70px, 10px) !important;
+    height: 350px;
+    /*max-height: auto;*/
     word-break: break-word;
     object-fit: contain;
     
@@ -281,34 +284,41 @@ hr {
   img#box-image {
     display: flex !important;
     position: relative;
-    width: 170px;
-    height: 160px;
-    transform: translate(20px, 10px);
+    width: 100%;
+    transform: translate(90px, -50px);
     z-index: 4;
   }
   img#front-desc  {
     display: flex !important;
     position: relative;
-    width: 350px;
-    max-height: 550px;
-    transform: translate(-30px, 0px) !important;
+    width: 370px;
+    max-height: 650px;
+    transform: translate(-80px, -550px) !important;
     z-index: 1;
   }
        
   img#back-desc {
     display: flex !important;
     position:relative;
-    width:700px;
-    height: 700px;
-    transform: translate(-400px, -150px);
+    width:590px;
+    height: 650px;
+    transform: translate(-300px, -150px);
     z-index: -2;
   }
 }
-@media (min-width: 1200px) {
-      body {
+@media (min-width: 992px) {
+ body {
+    min-height:900px;
     background: hsl(240, 73%, 65%) !important;
   }
+  hr {
+      transform:traslateY(-5px) !important;
+  }
   #myCard {
+    min-width: 80vw;
+    max-height:650px;
+    height: auto;
+    margin-right: 100px;
     background: white !important;
     overflow: hidden;
     z-index: 1;
@@ -317,10 +327,10 @@ hr {
     display: block;
     position: relative;
     background: white;
-    width: 55% !important;
-    transform: translate(200px, 40px) !important;
-    max-height: 70vh;
-    height: 50%;
+    width: 85% !important;
+    transform: translate(70px, 10px) !important;
+    height: 350px;
+    /*max-height: auto;*/
     word-break: break-word;
     object-fit: contain;
     
@@ -334,30 +344,29 @@ hr {
     display: none !important;
   }
   img#box-image {
-        display: flex !important;
+    display: flex !important;
     position: relative;
-    width: 170px;
-    height: 160px;
-    transform: translate(173px, 58px);
+    width: 100%;
+    transform: translate(90px, -50px);
     z-index: 4;
-}
+  }
   img#front-desc  {
     display: flex !important;
     position: relative;
-    width: 170%;
-    max-height: 931px;
-    transform: translate(-90px, -907px) !important;
+    width: 370px;
+    max-height: 650px;
+    transform: translate(-80px, -550px) !important;
     z-index: 1;
-}
+  }
        
   img#back-desc {
-        display: flex !important;
-    position: relative;
-    width: 940px;
-    height: 947px;
-    transform: translate(-462px, -248px);
+    display: flex !important;
+    position:relative;
+    width:590px;
+    height: 650px;
+    transform: translate(-300px, -150px);
     z-index: -2;
-}
+  }
 }
 
 .attribution { 
